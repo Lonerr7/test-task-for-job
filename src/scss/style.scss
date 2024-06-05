@@ -1,0 +1,152 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+// === header ===
+
+.header {
+  background-color: rgba($color: $header-bg, $alpha: 0.9);
+  padding: 32px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 436px;
+  }
+
+  &__link {
+    transition: .2s;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $link-hover-1;
+    }
+  }
+}
+
+.logo {
+  font-family: $font-family2;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 28px;
+  line-height: auto;
+  text-transform: uppercase;
+  margin-right: 15px;
+
+  &__color {
+    color: $logo
+  }
+}
+
+// === /header ===
+
+
+// === main ===
+
+.main {
+  
+
+  
+}
+
+.hero {
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 340px;
+  padding-top: 216px;
+
+  &__inner {
+    max-width: 780px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: auto;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+
+  &__title_colored {
+    color: $blue;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__itemLine {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  &__controls {
+    max-width: 396px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__control {
+    padding: 15px 32px;
+    font-size: 13px;
+    line-height: auto;
+    margin-right: 10px;
+    width: 184px; //!
+    text-align: center;
+    text-transform: uppercase;
+    outline: 1px solid;
+    outline-color: $gray;
+    background-color: $white;
+    color: $light-black;
+    border-radius: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__control_colored {
+    color: $white;
+    outline-color: $white;
+    background-color: $blue;
+  }
+}
+
+// === /main ===
+
+@import 'media';
