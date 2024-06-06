@@ -184,9 +184,11 @@
     justify-content: space-between;
     flex: 1;
     color: $white;
+    margin-bottom: 80px;
   }
 
   &__item {
+    position: relative;
     width: 210px; //!
     text-align: center;
   }
@@ -209,8 +211,75 @@
   }
 
   &__dots {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 110px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    flex: 1;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
+    &__control {
+      font-size: 18px;
+      position: relative;
+      width: 350px;
+    }
+
+    &__select {
+      appearance: none;
+      background-color: rgba($color: $white, $alpha: 0.8);
+      border: none;
+      width: 100%; //!
+      padding: 12px 3px 12px 10px;
+      outline: none;
+      border-radius: 3px;
+
+      &:focus-within {
+        outline: 3px solid $logo;
+      }
+    }
+
+    &__selectBtn {
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      width: 9px;
+      height: 6px;
+      pointer-events: none;
+    }
+
+    &__selectValue {
+      width: 30px
+    }
+
+    &__input {
+      background-color: rgba($color: $white, $alpha: 0.8);
+      width: 100%;
+      padding: 12px 36px 12px 10px;
+      border: none;
+      border-radius: 3px;
+      display: inline-block;
+
+      &::placeholder {
+        color: $orders-bg;
+      }
+
+      &:focus {
+        outline: 3px solid $logo;
+      }
+    }
   }
 }
 

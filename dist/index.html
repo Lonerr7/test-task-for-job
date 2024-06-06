@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap&_v=20240606185448" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:ital,wght@0,800;1,800&display=swap&_v=20240606185448" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap&_v=20240606224421" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:ital,wght@0,800;1,800&display=swap&_v=20240606224421" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.min.css?_v=20240606185448">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240606224421">
   <title>Loremipsum.net</title>
 </head>
 
@@ -84,13 +84,15 @@
         <div class="orders__item">
           <div class="orders__imageWrapper"><picture><source srcset="images/orders-search.webp" type="image/webp"><img src="images/orders-search.png" alt="search"></picture></div>
           <h6 class="orders__itemTitle">Lorem ipsum dolor sit amet</h6>
+
+          <div class="orders__dots">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+          </div>
         </div>
-        <div class="orders__dots">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-        </div>
+        
         <div class="orders__item">
           <div class="orders__imageWrapper">
             <picture><source srcset="images/orders-percent.webp" type="image/webp"><img src="images/orders-percent.png" alt="percent"></picture>
@@ -116,11 +118,39 @@
           <h6 class="orders__itemTitle">Excepteur sint occaecat cupidatat non proident</h6>
         </div>
       </div>
+
+      <form class="form" action="#">
+        <div class="form__top">
+          <div class="form__control">
+            <label for="type" hidden></label>
+            <select class="form__select" name="type" id="type">
+              <option class="form__selectValue" disabled selected value="">Выберите тип системы</option>
+              <option class="form__selectValue" value="first">Первая</option>
+              <option class="form__selectValue" value="second">Вторая</option>
+              <option class="form__selectValue" value="third">Третья</option>
+              <option class="form__selectValue" value="fourth">Четвертая</option>
+            </select>
+            <span class="form__selectBtn" type="button">
+              <picture><source srcset="images/select-arrow.webp" type="image/webp"><img class="form__selectArrow" src="images/select-arrow.png" alt="arrow"></picture>
+            </span>
+          </div>
+
+          <div class="form__control">
+            <label for="email" hidden></label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form__control">
+            <label for="username" hidden></label>
+            <input class="form__input" type="text" name="username" id="username" placeholder="Ваше имя">
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 </main>
       <footer class="footer">FOOTER</footer>
     </div>
-    <script src="js/app.min.js?_v=20240606185448"></script>
+    <script src="js/app.min.js?_v=20240606224421"></script>
   </body>
 </html>

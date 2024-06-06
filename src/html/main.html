@@ -42,13 +42,15 @@
         <div class="orders__item">
           <div class="orders__imageWrapper"><img src="images/orders-search.png" alt="search"></div>
           <h6 class="orders__itemTitle">Lorem ipsum dolor sit amet</h6>
+
+          <div class="orders__dots">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+            <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
+          </div>
         </div>
-        <div class="orders__dots">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-          <img class="orders__dot" src="images/orders-dot.svg" alt="dot">
-        </div>
+        
         <div class="orders__item">
           <div class="orders__imageWrapper">
             <img src="images/orders-percent.png" alt="percent">
@@ -74,6 +76,34 @@
           <h6 class="orders__itemTitle">Excepteur sint occaecat cupidatat non proident</h6>
         </div>
       </div>
+
+      <form class="form" action="#">
+        <div class="form__top">
+          <div class="form__control">
+            <label for="type" hidden></label>
+            <select class="form__select" name="type" id="type">
+              <option class="form__selectValue" disabled selected value="">Выберите тип системы</option>
+              <option class="form__selectValue" value="first">Первая</option>
+              <option class="form__selectValue" value="second">Вторая</option>
+              <option class="form__selectValue" value="third">Третья</option>
+              <option class="form__selectValue" value="fourth">Четвертая</option>
+            </select>
+            <span class="form__selectBtn" type="button">
+              <img class="form__selectArrow" src="images/select-arrow.png" alt="arrow">
+            </span>
+          </div>
+
+          <div class="form__control">
+            <label for="email" hidden></label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+          </div>
+
+          <div class="form__control">
+            <label for="username" hidden></label>
+            <input class="form__input" type="text" name="username" id="username" placeholder="Ваше имя">
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 </main>
