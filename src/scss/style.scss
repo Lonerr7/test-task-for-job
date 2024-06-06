@@ -58,12 +58,7 @@
 
 // === main ===
 
-.main {
-  
-
-  
-}
-
+// --- hero ---
 .hero {
   background-image: url(../images/hero-bg.png);
   background-repeat: no-repeat;
@@ -146,6 +141,80 @@
     background-color: $blue;
   }
 }
+// --- /hero ---
+
+// --- orders ---
+
+.orders {
+  background-image: url(../images/orders-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom bottom; //!
+  background-color: $orders-bg;
+  padding-block: 68px;
+
+  &__info {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: auto;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+  &__title_colored {
+    color: $blue;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: auto;
+    color: $light-gray;
+    text-align: center;
+  }
+
+  &__items {
+    max-width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    color: $white;
+  }
+
+  &__item {
+    width: 210px; //!
+    text-align: center;
+  }
+
+  &__imageWrapper {
+    border: 4px solid $dark-blue;
+    border-radius: 100px;
+    background-color: $blue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+  }
+
+  &__itemTitle {
+    max-width: 188px;
+    margin: 0 auto;
+  }
+
+  &__dots {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// --- /orders ---
 
 // === /main ===
 
