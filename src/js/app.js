@@ -5,10 +5,19 @@ functions.isWebp();
 
 // Caroursel
 const carousel = document.querySelector('.slider__carousel');
+const arrows = document.querySelectorAll('.slider__btn');
+
+const firstCardWidth = carousel.querySelector('.slider__card').offsetWidth;
 
 let isDragging = false;
 let startX;
 let startScrollLeft;
+
+arrows.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    carousel.scrollLeft += btn.id === 'left' ? -firstCardWidth : firstCardWidth
+  })
+})
 
 const dragStart = (e) => {
   isDragging = true;

@@ -379,7 +379,19 @@
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 5px);
     gap: 8px;
-    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scrollbar-width: 0;  
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__carousel.dragging {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
   }
 
   &__carousel.dragging .slider__card {
@@ -388,6 +400,7 @@
   }
  
   &__card {
+    scroll-snap-align: start;
     max-width: 350px;
     padding: 20px 30px;
     border-radius: 8px;
@@ -399,10 +412,25 @@
     background-color: $card-bg;
   }
 
+  &__imgBox {
+    margin-bottom: 10px;
+  }
+
   &__img {
     width: 150px;
     height: 150px;
     object-fit: cover;
+  }
+
+  &__cardTitle {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__review {
+    font-size: 16px;
+    color: $gray-2;
   }
 
   &__btn {

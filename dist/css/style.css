@@ -572,7 +572,21 @@ body {
   grid-auto-flow: column;
   grid-auto-columns: calc(33.3333333333% - 5px);
   gap: 8px;
-  overflow: hidden;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
+}
+
+.slider__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__carousel.dragging {
+  scroll-behavior: auto;
+  -ms-scroll-snap-type: none;
+      scroll-snap-type: none;
 }
 
 .slider__carousel.dragging .slider__card {
@@ -585,6 +599,7 @@ body {
 }
 
 .slider__card {
+  scroll-snap-align: start;
   max-width: 350px;
   padding: 20px 30px;
   border-radius: 8px;
@@ -605,11 +620,26 @@ body {
   background-color: rgb(70, 70, 72);
 }
 
+.slider__imgBox {
+  margin-bottom: 10px;
+}
+
 .slider__img {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.slider__cardTitle {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.slider__review {
+  font-size: 16px;
+  color: #C3C3C3;
 }
 
 .slider__btn {
