@@ -363,4 +363,67 @@
 
 // === /main ===
 
+
+// === footer ===
+
+.footer {
+  padding: 30px 0;
+  background-color: $footer-bg;
+  font-size: 13px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    padding-inline: 40px !important;
+    border-right: 1px solid $gray-2;
+
+    &:first-child {
+      padding-left: 0 !important;
+    }
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0 !important;
+      padding-left: 35px !important;
+    }
+  }
+
+  &__logo {
+    color: $white;
+    margin-right: 10px;
+  }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    max-width: 434px;
+  }
+
+  &__listItem, &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__listItem {
+    margin-right: 10px;
+    color: $gray-2;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+  }
+}
+
+//  === /footer ===
+
 @import 'media';
