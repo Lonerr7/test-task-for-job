@@ -13,6 +13,8 @@ $light-gray: #BBBBBB;
 $white: #fff;
 $light-black: #2A2B30;
 $orders-bg: #272733;
+$reviews-bg:rgb(49, 49, 55);
+$card-bg:rgb(70, 70, 72);
 $dark-blue: #286690;
 $black: #000;
 $footer-bg: #3D4050;
@@ -28,6 +30,16 @@ $gray-2: #C3C3C3;
   position: relative;
   width: 350px;
   margin-bottom: 30px;
+}
+
+%section-title {
+  text-transform: uppercase;
+    font-size: 36px;
+    line-height: auto;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    margin-bottom: 30px;
 }
 
 //  === /templates ===

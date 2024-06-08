@@ -7,6 +7,17 @@
   margin-bottom: 30px;
 }
 
+.reviews__title,
+.orders__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: auto;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,6 +78,8 @@ a {
 
 button {
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 html {
@@ -111,6 +124,7 @@ body {
 
 .header {
   background-color: rgba(16, 16, 29, 0.9);
+  z-index: 50;
   padding: 32px 0;
   position: fixed;
   top: 0;
@@ -282,16 +296,6 @@ body {
 
 .orders__info {
   margin-bottom: 80px;
-}
-
-.orders__title {
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: auto;
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 30px;
 }
 
 .orders__title_colored {
@@ -546,6 +550,87 @@ body {
   outline: 2px solid #fff;
   margin: 0 auto;
   border-radius: 3px;
+}
+
+.reviews {
+  padding-block: 68px;
+  background-color: rgb(49, 49, 55);
+}
+
+.reviews__title {
+  margin-bottom: 60px;
+}
+
+.slider {
+  position: relative;
+  padding-inline: 50px;
+}
+
+.slider__carousel {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 5px);
+  gap: 8px;
+  overflow: hidden;
+}
+
+.slider__carousel.dragging .slider__card {
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slider__card {
+  max-width: 350px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgb(70, 70, 72);
+}
+
+.slider__img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
+.slider__btn:first-child {
+  left: 0;
+}
+
+.slider__btn:last-child {
+  right: 0;
+}
+
+.slider__arrow {
+  width: 30px;
+  height: 30px;
 }
 
 .footer {

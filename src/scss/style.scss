@@ -8,6 +8,7 @@
 
 .header {
   background-color: rgba($color: $header-bg, $alpha: 0.9);
+  z-index: 50;
   padding: 32px 0;
   position: fixed;
   top: 0;
@@ -158,13 +159,7 @@
   }
 
   &__title {
-    text-transform: uppercase;
-    font-size: 36px;
-    line-height: auto;
-    font-weight: 700;
-    text-align: center;
-    color: $white;
-    margin-bottom: 30px;
+    @extend %section-title;
   }
 
   &__title_colored {
@@ -360,6 +355,77 @@
 }
 
 // --- /orders ---
+
+// --- reviews ---
+
+.reviews {
+  padding-block: 68px;
+  background-color: $reviews-bg;
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 60px;
+  }
+}
+
+
+
+.slider {
+  position: relative;
+  padding-inline: 50px;
+
+  &__carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 5px);
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  &__carousel.dragging .slider__card {
+    cursor: grab;
+    user-select: none;
+  }
+ 
+  &__card {
+    max-width: 350px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $card-bg;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  &__btn {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  &__arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+// --- /reviews ---
 
 // === /main ===
 
