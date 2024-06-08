@@ -17,3 +17,15 @@ $dark-blue: #286690;
 $black: #000;
 
 // === /colors ===
+
+
+// === templates ===
+
+%form-control {
+  font-size: 18px;
+  position: relative;
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+//  === /templates ===

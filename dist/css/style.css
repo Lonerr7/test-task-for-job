@@ -1,3 +1,12 @@
+.orders .form__btn,
+.orders .form__fileLabel,
+.orders .form__control {
+  font-size: 18px;
+  position: relative;
+  width: 350px;
+  margin-bottom: 30px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -54,6 +63,10 @@ a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
+}
+
+button {
+  border: none;
 }
 
 html {
@@ -373,12 +386,6 @@ body {
           flex: 1;
 }
 
-.orders .form__control {
-  font-size: 18px;
-  position: relative;
-  width: 350px;
-}
-
 .orders .form__select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -439,6 +446,106 @@ body {
 
 .orders .form__input:focus {
   outline: 3px solid #42A9ED;
+}
+
+.orders .form__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.orders .form__items {
+  width: 100%;
+}
+
+.orders .form__block {
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.orders .form__range {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  height: 6px;
+  border: 1px solid #fff;
+}
+
+.orders .form__range::-webkit-slider-runnable-track,
+.orders .form__range::-moz-range-track {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 1px;
+}
+
+.orders .form__fileBox {
+  margin-bottom: 0;
+}
+
+.orders .form__file {
+  display: none;
+}
+
+.orders .form__fileLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 36px 12px 10px;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  outline: 2px solid #3E9CDC;
+  background-color: #fff;
+}
+
+.orders .form__fileImg {
+  margin-right: 10px;
+}
+
+.orders .form__btn {
+  display: block;
+  padding: 14px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3E9CDC;
+  outline: 2px solid #fff;
+  margin: 0 auto;
+  border-radius: 3px;
 }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
