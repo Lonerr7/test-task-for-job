@@ -3,6 +3,16 @@ import * as functions from './modules/functions.js';
 // Checking if browsers supports .webp
 functions.isWebp();
 
+// Dynamically setting range value
+const inputRange = document.querySelector('.form__range');
+const rangeValue = document.querySelector('.form__percentage');
+
+inputRange.addEventListener('input', () => {
+  const value = inputRange.value;
+
+  rangeValue.textContent = `${value}%`;
+});
+
 // Caroursel
 const carousel = document.querySelector('.slider__carousel');
 const arrows = document.querySelectorAll('.slider__btn');
