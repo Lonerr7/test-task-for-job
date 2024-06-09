@@ -315,6 +315,7 @@
       padding: 12px 3px 12px 10px;
       outline: none;
       border-radius: 3px;
+      cursor: pointer;
 
       &:focus-within {
         outline: 3px solid $logo;
@@ -548,6 +549,7 @@
   }
 
   &__block {
+    position: relative;
     display: flex;
     padding-inline: 40px !important;
     border-right: 1px solid $gray-2;
@@ -559,7 +561,7 @@
     &:last-child {
       border-right: none;
       padding-right: 0 !important;
-      padding-left: 35px !important;
+      // padding-left: 35px !important;
     }
   }
 
@@ -574,6 +576,7 @@
 
   &__list {
     max-width: 434px;
+    flex-wrap: wrap;
   }
 
   &__listItem, &__link {
