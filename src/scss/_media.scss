@@ -1,3 +1,9 @@
+@media (max-width: 840px) {
+  .orders__dots {
+    display: none;
+  }
+}
+
 @media (max-width: 630px) {
   .burger {
     display: block;
@@ -27,6 +33,41 @@
       width: 50%;
     }
   }
+
+  .orders {
+    padding-block: 34px;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  .orders {
+    &__info {
+      margin-bottom: 30px;
+    }
+
+    &__items {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+
+    &__imageWrapper {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
 }
 
 @media (max-width: 400px) {

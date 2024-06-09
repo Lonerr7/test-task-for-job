@@ -444,8 +444,8 @@ body {
 
 .orders__dots {
   position: absolute;
-  top: 0;
-  left: 100px;
+  top: 41px;
+  left: 163px;
   width: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +459,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-bottom: 40px;
 }
 
 .orders .form__top {
@@ -821,6 +820,12 @@ body {
   margin-right: 10px;
 }
 
+@media (max-width: 840px) {
+  .orders__dots {
+    display: none;
+  }
+}
+
 @media (max-width: 630px) {
   .burger {
     display: block;
@@ -849,6 +854,43 @@ body {
 
   .hero__control {
     width: 50%;
+  }
+
+  .orders {
+    padding-block: 34px;
+  }
+
+  .orders__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 582px) {
+  .orders__info {
+    margin-bottom: 30px;
+  }
+
+  .orders__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .orders__item {
+    margin-bottom: 15px;
+  }
+
+  .orders__imageWrapper {
+    margin-bottom: 10px;
   }
 }
 
