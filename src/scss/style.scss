@@ -48,8 +48,18 @@
   line-height: auto;
   text-transform: uppercase;
   margin-right: 15px;
+  transition: color .2s;
+
+  &:hover {
+    color: rgba($color: $white, $alpha: 0.6);
+
+    .logo__color {
+      color: $logo-hover;
+    }
+  }
 
   &__color {
+    transition: color .2s;
     color: $logo
   }
 }
@@ -68,7 +78,7 @@
 .burger::after {
   content: '';
   display: block;
-  width: 100%;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   margin: 6px 0;
@@ -202,6 +212,11 @@
     background-color: $white;
     color: $light-black;
     border-radius: 4px;
+    transition: .2s;
+
+    &:hover {
+      background-color: $white-gray;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -212,6 +227,10 @@
     color: $white;
     outline-color: $white;
     background-color: $blue;
+
+    &:hover {
+      background-color: $dark-blue-2;
+    }
   }
 }
 // --- /hero ---
@@ -295,8 +314,6 @@
       align-items: center;
       flex-wrap: wrap;
       flex: 1;
-
-      
     }
 
     &__control {
@@ -426,7 +443,12 @@
       text-transform: uppercase;
       border-radius: 3px;
       outline: 2px solid $blue;
-      background-color: $white
+      background-color: $white;
+      transition: .2s;
+
+      &:hover {
+        background-color: $white-gray;
+      }
     }
 
     &__fileImg {
@@ -444,6 +466,11 @@
       margin: 0 auto;
       border-radius: 3px;
       @extend %form-control;
+      transition: .2s;
+
+      &:hover {
+        background-color: $dark-blue-2;
+      }
     }
   }
 }
@@ -477,8 +504,9 @@
     overflow-x: auto;
     scrollbar-width: 0;  
     scroll-behavior: smooth;
+    scrollbar-width: none;
 
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar  {
       display: none;
     }
   }
@@ -607,6 +635,10 @@
     &:last-child {
       margin-right: 0px;
     }
+  }
+
+  &__link:hover  {
+    text-decoration: underline;
   }
 
   &__img {

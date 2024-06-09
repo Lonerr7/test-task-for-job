@@ -183,9 +183,23 @@ body {
   line-height: auto;
   text-transform: uppercase;
   margin-right: 15px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.logo:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logo:hover .logo__color {
+  color: #3688c0;
 }
 
 .logo__color {
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
   color: #42A9ED;
 }
 
@@ -202,7 +216,7 @@ body {
 .burger::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   margin: 6px 0;
@@ -361,6 +375,13 @@ body {
   background-color: #fff;
   color: #2A2B30;
   border-radius: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hero__control:hover {
+  background-color: #d1d1d1;
 }
 
 .hero__control:last-child {
@@ -371,6 +392,10 @@ body {
   color: #fff;
   outline-color: #fff;
   background-color: #3E9CDC;
+}
+
+.hero__control_colored:hover {
+  background-color: #347fb2;
 }
 
 .no-webp .orders {
@@ -646,6 +671,13 @@ body {
   border-radius: 3px;
   outline: 2px solid #3E9CDC;
   background-color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.orders .form__fileLabel:hover {
+  background-color: #d1d1d1;
 }
 
 .orders .form__fileImg {
@@ -662,6 +694,13 @@ body {
   outline: 2px solid #fff;
   margin: 0 auto;
   border-radius: 3px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.orders .form__btn:hover {
+  background-color: #347fb2;
 }
 
 .reviews {
@@ -689,6 +728,7 @@ body {
   overflow-x: auto;
   scrollbar-width: 0;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .slider__carousel::-webkit-scrollbar {
@@ -840,6 +880,10 @@ body {
 
 .footer__listItem:last-child {
   margin-right: 0px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 .footer__img {
