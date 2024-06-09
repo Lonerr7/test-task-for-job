@@ -302,14 +302,14 @@ body {
   color: #3E9CDC;
 }
 
+.hero__info {
+  margin-bottom: 80px;
+}
+
 .hero__subtitle {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.hero__list {
-  margin-bottom: 80px;
 }
 
 .hero__item {
@@ -828,6 +828,47 @@ body {
 
   .navigation__list {
     display: none;
+  }
+
+  .hero {
+    padding: 150px 0 50px 0;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .hero__info {
+    margin-bottom: 40px;
+  }
+
+  .hero__controls {
+    max-width: 100%;
+  }
+
+  .hero__control {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 120px 0 20px 0;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero__info {
+    margin-bottom: 30px;
   }
 }
 
