@@ -374,7 +374,7 @@
       flex: 1;
     }
 
-    &__range{
+    &__range {
       appearance: none;
       width: 100%;
       background-color: rgba($color: $white, $alpha: 0.7);
@@ -383,9 +383,25 @@
       border: 1px solid $white;
 
       &::-webkit-slider-runnable-track, &::-moz-range-track {
-        
         background-color: rgba($color: $white, $alpha: 0.7);
         height: 1px;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $dark-blue;
+        border-radius: 10px;
+        background-color: $logo;
+        cursor: pointer;
+      }
+
+      &::-moz-range-thumb {
+        border: 2px solid $dark-blue;
+        border-radius: 10px;
+        background-color: $logo;
+        cursor: pointer;
       }
     }
 

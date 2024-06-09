@@ -602,6 +602,23 @@ body {
   height: 1px;
 }
 
+.orders .form__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #286690;
+  border-radius: 10px;
+  background-color: #42A9ED;
+  cursor: pointer;
+}
+
+.orders .form__range::-moz-range-thumb {
+  border: 2px solid #286690;
+  border-radius: 10px;
+  background-color: #42A9ED;
+  cursor: pointer;
+}
+
 .orders .form__fileBox {
   margin-bottom: 0;
 }
