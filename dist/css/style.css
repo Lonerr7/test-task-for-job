@@ -832,6 +832,12 @@ body {
   }
 }
 
+@media (max-width: 780px) {
+  .slider__carousel {
+    grid-auto-columns: calc(50% - 5px);
+  }
+}
+
 @media (max-width: 740px) {
   .form__control {
     width: 100% !important;
@@ -897,6 +903,15 @@ body {
     font-size: 32px;
     margin-bottom: 20px;
   }
+
+  .reviews {
+    padding-block: 34px;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 582px) {
@@ -925,6 +940,14 @@ body {
   .orders__imageWrapper {
     margin-bottom: 10px;
   }
+
+  .slider__carousel {
+    grid-auto-columns: 100%;
+  }
+
+  .slider__card {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -944,6 +967,13 @@ body {
 
   .hero__info {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .slider__img {
+    width: 125px;
+    height: 125px;
   }
 }
 

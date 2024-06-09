@@ -6,9 +6,15 @@ functions.isWebp();
 // Toggling burger icon
 const burgerBtn = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobileMenu__list');
+const body = document.querySelector('body');
 
 burgerBtn.addEventListener('click', () => {
-  console.log(`clicked`);
+  if (body.classList.contains('lock')) {
+    body.classList.remove('lock');
+  } else {
+    body.classList.add('lock');
+  }
+
   burgerBtn.classList.toggle('isActive');
   mobileMenu.classList.toggle('isActive');
 });
