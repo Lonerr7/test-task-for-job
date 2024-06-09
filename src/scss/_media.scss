@@ -4,6 +4,32 @@
   }
 }
 
+@media (max-width: 740px) {
+  .form {
+    &__control {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
+  
+    &__bottom {
+      flex-direction: column;
+    }
+  
+    &__items {
+      margin-bottom: 30px;
+    }
+  
+    &__fileLabel {
+      margin-right: 0 !important;
+      width: 100% !important;
+    }
+
+    &__btn {
+      width: 100% !important;
+    }
+  }
+}
+
 @media (max-width: 630px) {
   .burger {
     display: block;

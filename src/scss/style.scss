@@ -295,10 +295,16 @@
       align-items: center;
       flex-wrap: wrap;
       flex: 1;
+
+      
     }
 
     &__control {
       @extend %form-control;
+
+      &:nth-child(3), &:last-child {
+        margin-right: 0;
+      }
     }
 
     &__select {
