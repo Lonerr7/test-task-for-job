@@ -3,6 +3,16 @@ import * as functions from './modules/functions.js';
 // Checking if browsers supports .webp
 functions.isWebp();
 
+// Toggling burger icon
+const burgerBtn = document.querySelector('.burger');
+const mobileMenu = document.querySelector('.mobileMenu__list');
+
+burgerBtn.addEventListener('click', () => {
+  console.log(`clicked`);
+  burgerBtn.classList.toggle('isActive');
+  mobileMenu.classList.toggle('isActive');
+});
+
 // Dynamically setting range value
 const inputRange = document.querySelector('.form__range');
 const rangeValue = document.querySelector('.form__percentage');
@@ -24,7 +34,7 @@ let startX;
 let startScrollLeft;
 
 arrows.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('click', () => {
     carousel.scrollLeft += btn.id === 'left' ? -firstCardWidth : firstCardWidth
   })
 })
@@ -52,3 +62,4 @@ const handleMousmove = (e) => {
 carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mousemove', handleMousmove);
 carousel.addEventListener('mouseup', dragStop);
+

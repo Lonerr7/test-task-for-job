@@ -160,14 +160,16 @@ body {
   max-width: 436px;
 }
 
-.navigation__link {
+.navigation__link,
+.navigation .mobileMenu__link {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
   text-transform: uppercase;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation .mobileMenu__link:hover {
   color: #43ABF0;
 }
 
@@ -184,6 +186,93 @@ body {
 
 .logo__color {
   color: #42A9ED;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 51;
+  width: 35px;
+  cursor: pointer;
+}
+
+.burger__item,
+.burger::before,
+.burger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger::before {
+  margin-top: 0;
+}
+
+.burger::after {
+  margin-bottom: 0;
+}
+
+.burger.isActive .burger__item {
+  opacity: 0;
+}
+
+.burger.isActive::before {
+  -webkit-transform: rotate(-45deg) translate(-7px, 3px);
+      -ms-transform: rotate(-45deg) translate(-7px, 3px);
+          transform: rotate(-45deg) translate(-7px, 3px);
+}
+
+.burger.isActive::after {
+  -webkit-transform: rotate(45deg) translate(-8px, -5px);
+      -ms-transform: rotate(45deg) translate(-8px, -5px);
+          transform: rotate(45deg) translate(-8px, -5px);
+}
+
+.mobileMenu__list {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 100;
+  background-color: #3D4050;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobileMenu__item {
+  margin-bottom: 15px;
+}
+
+.mobileMenu__item:last-child {
+  margin-bottom: 0;
+}
+
+.mobileMenu__list.isActive {
+  left: 0;
 }
 
 .no-webp .hero {
@@ -730,6 +819,16 @@ body {
 
 .footer__img {
   margin-right: 10px;
+}
+
+@media (max-width: 630px) {
+  .burger {
+    display: block;
+  }
+
+  .navigation__list {
+    display: none;
+  }
 }
 
 .webp .hero { background-image: url(../images/hero-bg.webp); }
